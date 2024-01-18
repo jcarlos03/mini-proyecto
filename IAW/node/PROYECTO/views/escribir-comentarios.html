@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escribir Comentarios</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    form {
+      max-width: 400px;
+      margin: 20px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0 15px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #008080;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #006666;
+    }
+
+    button, a {
+      display: inline-block;
+      margin-top: 20px;
+      text-decoration: none;
+      color: #fff;
+      background-color: #008080;
+      border-radius: 5px;
+    }
+
+    a:hover {
+      background-color: #006666;
+    }
+  </style>
+</head>
+<body>
+  <h1>Escribe un comentario</h1>
+  <form action="/escribir-comentarios" method="post">
+    <label for="comentario">Comentario:</label>
+    <textarea id="commentario" name="comentario" rows="4" required></textarea>
+    <br>
+    <button type="submit">Publicar comentario</button>
+  </form>
+  <br>
+  <a href="/visualizar">Vuelve a visualizar los comentarios</a>
+  <br>
+  <a href="/logout">Logout</a>
+</body>
+</html>

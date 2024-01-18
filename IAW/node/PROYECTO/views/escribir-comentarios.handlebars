@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    form {
+      max-width: 400px;
+      margin: 20px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0 15px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #008080;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #006666;
+    }
+
+    button, a {
+      display: inline-block;
+      margin-top: 20px;
+      text-decoration: none;
+      color: #fff;
+      background-color: #008080;
+      border-radius: 5px;
+    }
+
+    a:hover {
+      background-color: #006666;
+    }
+  </style>
+  <title>Escribir Comentario</title>
+</head>
+<body>
+  <h1>Escribir un Comentario</h1>
+  <form action="/visualizar" method="post">
+    <label for="nuevosComentarios">Nuevo Comentario:</label>
+    <input type="text" id="nuevosComentarios" name="nuevosComentarios">
+    <button type="submit">Agregar Comentario</button>
+  </form>
+  <br>
+  <a href="/visualizar">Volver a los Comentarios</a>
+  <br>
+  <a href="/logout">Cerrar Sesión</a>
+</body>
+</html>
